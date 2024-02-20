@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wear Now - Registration</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="register.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Website Logo" class="logo">
+            <h1>Wear Now</h1>
+        </div>
+        <nav>
+            <a href="mainpage.html" class="active" onclick="showPage('home')">Home</a>
+            <a href="shop.html" onclick="showPage('shop')">Shop</a>
+            <a href="regeiter.html" onclick="showPage('register')">Register</a>
+            <a href="login.html" onclick="showPage('login')">Login</a>
+            <a href="about.html" onclick="showPage('about')">About</a>
+            <a href="contact.html" onclick="showPage('contact')">Contact</a>
+            <a href="cart.html">
+                <img src="cart1.png" alt="Cart Logo" class="cart-logo">
+            </a>
+        </nav>
+    </header>
+    <div class="ccontainer">
+        <h1>Wear Now - Registration</h1>
+        <form id="registrationForm">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="input-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+        <p class="signin-link">
+            Already a Customer ? <a href="login.html">Sign in</a>
+        </p>
+    </div>
+
+    
+</body>
+</html>
