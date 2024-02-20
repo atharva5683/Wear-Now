@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='cart.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+</body>
+<header>
+    <div class="logo-container">
+        <img src="logo.png" alt="Website Logo" class="logo">
+        <h1>Wear Now</h1>
+    </div>
+    <nav>
+        <a href="index.html" class="active" onclick="showPage('home')">Home</a>
+        <a href="shop.html" onclick="showPage('shop')">Shop</a>
+        <a href="regeiter.html" onclick="showPage('register')">Register</a>
+        <a href="login.html" onclick="showPage('login')">Login</a>
+        <a href="about.html" onclick="showPage('about')">About</a>
+        <a href="contact.html" onclick="showPage('contact')">Contact</a>
+    </nav>
+</header>
+</html>
+<section class="cart-items">
+    <!-- First Cart Item -->
+    <div class="cart-item">
+        <img src="t5.jpg" alt="Tshirt Image">
+        <div class="item-info">
+            <span class="price">Price: &#8377;499</span>
+            <button class="remove-btn">Remove</button>
+        </div>
+    </div>
+    
+    <!-- Second Cart Item -->
+    <div class="cart-item">
+        <img src="t6.jpg" alt="Tshirt">
+        <div class="item-info">
+            <span class="price">Price: &#8377;699</span>
+            <button class="remove-btn">Remove</button>
+        </div>
+    </div>
+
+    <!-- Third Cart Item -->
+    <div class="cart-item">
+        <img src="w2.jpg" alt="Tshirt Image">
+        <div class="item-info">
+            <span class="price">Price: &#8377;499</span>
+            <button class="remove-btn">Remove</button>
+        </div>
+    </div>
+</section>
+
+<!-- Cart Total -->
+<section class="cart-total">
+    <p>Total: &#8377;1697</p>
+    <button>Checkout</button>
+</section>
