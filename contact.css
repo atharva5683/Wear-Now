@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('c1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; /* This ensures that the background image doesn't move with scroll */
+    height: 100vh; /* ensures full viewport height coverage */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-container {
+    display: flex;
+    align-items: left;
+}
+
+.logo {
+    width: 140px; /* Adjust as needed */
+    height: 80px; /* Adjust as needed */
+    margin-right: px;
+}
+nav a {
+    margin-left: 1em;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);;
+    box-shadow: 0 0 10px rgba(241, 239, 239, 0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 2px 0;
+    background-color: #333;
+    color: #fff;
+}
+.follow-us {
+    text-align: center;
+}
+
+.follow-us h2 {
+    margin-bottom: 20px;
+}
+
+.follow-us a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #f4f4f4;
+    font-size: 20px;
+}
+
+.follow-us a:hover {
+    color: #00aaff;
+}
+
+/* Social Icons using Font Awesome */
+.follow-us .fab.fa-twitter:hover {
+    color: #00acee;
+}
+
+.follow-us .fab.fa-instagram:hover {
+    color: #C13584;
+}
+
+.follow-us .fab.fa-linkedin-in:hover {
+    color: #0077b5;
+}
+
+.follow-us .fab.fa-facebook-f:hover {
+    color: #1877f2;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;  /* Gap between grid items */
+    padding: 20px 0;
+    background-color: #dcd8d8;
+    color: #090909;
+}
+
+.icon-container {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #050a0f;
+    font-size:medium;
+    }
+
+.icon-container img {
+    width: 40px;  /* Adjust this value as per your icon size */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.icon-container p {
+    margin: 0; /* Removes default margin */
+    font-size: 14px;
+}

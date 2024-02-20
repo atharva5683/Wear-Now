@@ -1,0 +1,308 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.cart-items {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.cart-total {
+    padding: 20px;
+    text-align: right;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 140px; /* Adjust as needed */
+    height: 80px; /* Adjust as needed */
+    margin-right: px;
+}
+nav a {
+    margin-left: 1em;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.promo {
+    background-image: url('promo-bg.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 5em 0;
+    color: #fff;
+}
+.product button {
+    padding: 5px 15px;
+    color: #fff;
+    background-color: #050a0f;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    transform: scale(1); /* Set initial scale */
+    position: relative;  /* Needed to set the position for the pseudo-element */
+    overflow: hidden;    /* To hide the overflow of the pseudo-element */
+}
+
+.product button:hover {
+    background-color: #020f1e;
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Create a ripple effect on click */
+.product button:active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.5); /* White color with half opacity */
+    animation: ripple 0.6s;
+}
+
+.product {
+    /* These are just example dimensions. Adjust as needed. */
+    width: 200px;
+    height: 500px;
+    overflow: hidden; /* This ensures the image does not go outside the container when zoomed. */
+
+    /* Optional: Add a border or shadow for a nicer look */
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product {
+    display: block;
+    width: 100%; /* Ensures the image fits the container */
+    transition: transform 0.3s ease-in-out; /* Transition effect for smooth zooming */
+}
+
+.product:hover img {
+    transform: scale(1.2); /* Adjust the scale value to control the zoom level */
+}
+
+.product{
+    font-size: larger;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    b
+}
+
+@keyframes ripple {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.shop-now {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 2em;
+    text-decoration: none;
+}
+
+.featured-products {
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2em;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 1em;
+    text-align: center;
+}
+
+.featured-products {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #f8f8f8;
+}
+
+
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%); /* Starts off the screen to the right */
+    }
+    to {
+        transform: translateX(0); /* Ends at its normal position */
+    }
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+    animation: slideInFromRight 2.5s forwards;
+}
+
+.banner img {
+    width: 100%;
+    height: 450px;
+}
+
+
+
+/* Grid Setup */
+.featured-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Three products per row */
+    gap: 20px; /* Spacing between the products */
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #e1e1e1;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product p, .product span {
+    margin: 10px 0;
+    color: #555;
+}
+
+.product button {
+    padding: 5px 15px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #0056b3;
+}
+
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;  /* Gap between grid items */
+    padding: 20px 0;
+    background-color: #dcd8d8;
+    color: #090909;
+}
+
+.icon-container {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #050a0f;
+    font-size:m;
+    }
+
+.icon-container img {
+    width: 40px;  /* Adjust this value as per your icon size */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.icon-container p {
+    margin: 0; /* Removes default margin */
+    font-size: 14px;
+}
+
+footer {
+    padding: 1px;
+    background-color: #333;
+    color: #f4f4f4;
+    text-align: center;
+}
+.follow-us {
+    text-align: center;
+}
+
+.follow-us h2 {
+    margin-bottom: 20px;
+}
+
+.follow-us a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #f4f4f4;
+    font-size: 20px;
+}
+
+.follow-us a:hover {
+    color: #00aaff;
+}
+
+/* Social Icons using Font Awesome */
+.follow-us .fab.fa-twitter:hover {
+    color: #00acee;
+}
+
+.follow-us .fab.fa-instagram:hover {
+    color: #C13584;
+}
+
+.follow-us .fab.fa-linkedin-in:hover {
+    color: #0077b5;
+}
+
+.follow-us .fab.fa-facebook-f:hover {
+    color: #1877f2;
+}
+
