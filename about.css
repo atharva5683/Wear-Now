@@ -1,0 +1,155 @@
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.logo-container {
+    display: flex;
+    align-items: left;
+}
+
+.logo {
+    width: 140px; /* Adjust as needed */
+    height: 80px; /* Adjust as needed */
+    margin-right: 5px;
+}
+nav a {
+    margin-left: 1em;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-image {
+    width: 100%;
+    max-width: 450px;
+    display: block;
+    margin: 20px auto;
+}
+
+p {
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.left-image, .right-image {
+    max-width: 1000px;
+    height: 350px;
+}
+
+.left-content, .right-content {
+    max-width: 50%;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 2px 0;
+    background-color: #333;
+    color: #fff;
+}
+.follow-us {
+    text-align: center;
+}
+
+.follow-us h2 {
+    margin-bottom: 20px;
+}
+
+.follow-us a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #f4f4f4;
+    font-size: 20px;
+}
+
+.follow-us a:hover {
+    color: #00aaff;
+}
+
+/* Social Icons using Font Awesome */
+.follow-us .fab.fa-twitter:hover {
+    color: #00acee;
+}
+
+.follow-us .fab.fa-instagram:hover {
+    color: #C13584;
+}
+
+.follow-us .fab.fa-linkedin-in:hover {
+    color: #0077b5;
+}
+
+.follow-us .fab.fa-facebook-f:hover {
+    color: #1877f2;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;  /* Gap between grid items */
+    padding: 20px 0;
+    background-color: #dcd8d8;
+    color: #090909;
+}
+
+.icon-container {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #050a0f;
+    font-size:medium;
+    }
+
+.icon-container img {
+    width: 40px;  /* Adjust this value as per your icon size */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.icon-container p {
+    margin: 0; /* Removes default margin */
+    font-size: 14px;
+}

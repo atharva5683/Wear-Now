@@ -1,0 +1,143 @@
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    padding: 0px;
+    background-color: #333;
+}
+
+#logo {
+    max-width: 200px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+nav a.active, nav a:hover {
+    background-color: #0a0a0a;
+}
+
+/* Grid Setup */
+.featured-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Three products per row */
+    gap: 20px; /* Spacing between the products */
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #e1e1e1;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product p, .product span {
+    margin: 10px 0;
+    color: #555;
+}
+
+.product button {
+    padding: 5px 15px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #0056b3;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    padding: 10px 15px;
+    margin: 5px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+}
+
+.pagination a.active {
+    background-color: #1e1f1f;
+    color: white;
+}
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #333;
+    color: #fff;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;  /* Gap between grid items */
+    padding: 20px 0;
+    background-color: #dcd8d8;
+    color: #090909;
+}
+
+.icon-container {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #050a0f;
+    font-size:medium;
+    }
+
+.icon-container img {
+    width: 40px;  /* Adjust this value as per your icon size */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.icon-container p {
+    margin: 0; /* Removes default margin */
+    font-size: 14px;
+}
+
